@@ -86,7 +86,7 @@ const initLive2dData = () => {
         showMessage('兔然出现~', 4000)
     });
     // 点击返回主页按钮
-    $('.waifu-tool .home').click(function () {
+    $('.waifu-tool .wt-home').click(function () {
         try {
             if (typeof (ajax) === "function") {
                 ajax(window.location.protocol + '//' + window.location.hostname + '/', "pagelink")
@@ -96,21 +96,21 @@ const initLive2dData = () => {
         } catch (e) {}
     });
     // 随机一句话
-    $('.waifu-tool .comments').click(function () {
+    $('.waifu-tool .wt-comments').click(function () {
         showHitokoto()
     });
     // 详情页面
-    $('.waifu-tool .info-circle').click(function () {
+    $('.waifu-tool .wt-info-circle').click(function () {
         window.open('https://cxlm.work/archives/add-live2d-2233');
     });
     // 拍照页面
-    $('.waifu-tool .camera').click(function () {
+    $('.waifu-tool .wt-camera').click(function () {
         showMessage('照片可爱吗？', 5000);
         window.Live2D.captureName = model_p + '.png';
         window.Live2D.captureFrame = true
     });
     // 关闭按钮
-    $('.waifu-tool .close').click(function () {
+    $('.waifu-tool .wt-close').click(function () {
         localStorage.setItem('waifu-display', 'none');
         showMessage('それじゃあまたね', 2000);
         window.setTimeout(function () {
@@ -121,7 +121,7 @@ const initLive2dData = () => {
     // 切换角色
     var model_p = 22,
         m22_id = m33_id = 0;
-    $('.waifu-tool .drivers-license-o').click(function () {
+    $('.waifu-tool .wt-drivers-license-o').click(function () {
         if (model_p === 22) {
             loadlive2d('live2d', $(".l2d_xb").attr("data-api") + '/22.' + avaiableIds[m22_id] + '.config.json');
             model_p = 33;
@@ -133,7 +133,7 @@ const initLive2dData = () => {
         }
     });
     // 换装按钮
-    $('.waifu-tool .street-view').click(function () {
+    $('.waifu-tool .wt-street-view').click(function () {
         let border = avaiableIds.length;
         if (!showR18Model) {
             border -= 1;
@@ -248,29 +248,29 @@ const initLive2dData = () => {
         $('.gotop-box').mouseover(function () {
             showMessage('要回到开始的地方么？')
         });
-        $('.waifu-tool .home').mouseover(function () {
+        $('.waifu-tool .wt-home').mouseover(function () {
             showMessage('回到首页？')
         });
-        $('.waifu-tool .comments').mouseover(function () {
+        $('.waifu-tool .wt-comments').mouseover(function () {
             showMessage('要让我瞎说了吗？')
         });
-        $('.waifu-tool .drivers-license-o').mouseover(function () {
+        $('.waifu-tool .wt-drivers-license-o').mouseover(function () {
             if (model_p === 22) {
                 showMessage('要见见我的姐姐嘛')
             } else {
                 showMessage('什么？服务不满意吗？')
             }
         });
-        $('.waifu-tool .street-view').mouseover(function () {
+        $('.waifu-tool .wt-street-view').mouseover(function () {
             showMessage('要换装吗？')
         });
-        $('.waifu-tool .camera').mouseover(function () {
+        $('.waifu-tool .wt-camera').mouseover(function () {
             showMessage('要拍照啦？ワクワク！')
         });
-        $('.waifu-tool .info-circle').mouseover(function () {
+        $('.waifu-tool .wt-info-circle').mouseover(function () {
             showMessage('想知道更多关于我的事么？')
         });
-        $('.waifu-tool .close').mouseover(function () {
+        $('.waifu-tool .wt-close').mouseover(function () {
             showMessage('到了要说再见的时候了吗')
         });
         $(document).on("click", "a.post-title-link", function () {
