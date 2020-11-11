@@ -40,31 +40,31 @@
 
     - 静态服务器的 home 目录下的文件结构
 
-    > live2d/
-    > |-- 22
-    > |   |-- 22.v2.idle-01.mtn
-    > |   |-- 22.v2.idle-02.mtn
-    > |   |-- 22.v2.idle-03.mtn
-    > ...
-    > |   |-- closet.2016.xmas
-    > |   |   |-- texture_01.png
-    > |   |   |-- texture_02.png
-    > |   |   |-- texture_03_1.png
-    > |   |   `-- texture_03_2.png
-    > |   |-- closet.2017.cba-normal
-    > ...
-    > |-- 22.2020.newyear.config.json
-    > |-- 22.default.v2.config.json
-    > |-- 33
-    > |   |-- 33.v2.idle-01.mtn
-    > |   |-- 33.v2.idle-02.mtn
-    > ...
-    > |-- auto_waifu.js
-    > |-- demo.html
-    > |-- live2d.min.js
-    > |-- waifu-btn.png
-    > |-- waifu.css
-    > \`-- waifu-tips.js
+    > live2d/  
+    > |-- 22  
+    > |   |-- 22.v2.idle-01.mtn  
+    > |   |-- 22.v2.idle-02.mtn  
+    > |   |-- 22.v2.idle-03.mtn  
+    > ...  
+    > |   |-- closet.2016.xmas  
+    > |   |   |-- texture_01.png  
+    > |   |   |-- texture_02.png  
+    > |   |   |-- texture_03_1.png  
+    > |   |   `-- texture_03_2.png  
+    > |   |-- closet.2017.cba-normal  
+    > ...  
+    > |-- 22.2020.newyear.config.json  
+    > |-- 22.default.v2.config.json  
+    > |-- 33  
+    > |   |-- 33.v2.idle-01.mtn  
+    > |   |-- 33.v2.idle-02.mtn  
+    > ...  
+    > |-- auto_waifu.js  
+    > |-- demo.html  
+    > |-- live2d.min.js  
+    > |-- waifu-btn.png  
+    > |-- waifu.css  
+    > \`-- waifu-tips.js  
 
 3. 上传至站点静态目录下
 
