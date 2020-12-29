@@ -123,11 +123,11 @@ const initLive2dData = () => {
         m22_id = m33_id = 0;
     $('.waifu-tool .wt-drivers-license-o').click(function () {
         if (model_p === 22) {
-            loadlive2d('live2d', 'https://raw.githubusercontent.com/e9965/poster-girl-l2d-2233/master/src/' + '/22.' + avaiableIds[m22_id] + '.config.json');
+            loadlive2d('live2d', 'https://e9965.github.io/api' + '/22.' + avaiableIds[m22_id] + '.config.json');
             model_p = 33;
             showMessage('哟！想我了？', 4000)
         } else {
-            loadlive2d('live2d', 'https://raw.githubusercontent.com/e9965/poster-girl-l2d-2233/master/src/' + '/33.' + avaiableIds[m33_id] + '.config.json');
+            loadlive2d('live2d', 'https://e9965.github.io/api' + '/33.' + avaiableIds[m33_id] + '.config.json');
             model_p = 22;
             showMessage('我回来啦！', 4000)
         }
@@ -144,14 +144,14 @@ const initLive2dData = () => {
             if (oldId === m33_id) {
                 m33_id = (m33_id + 1) % border;
             }
-            loadlive2d('live2d', 'https://raw.githubusercontent.com/e9965/poster-girl-l2d-2233/master/src/' + '/33.' + avaiableIds[m33_id] + '.config.json')
+            loadlive2d('live2d', 'https://e9965.github.io/api' + '/33.' + avaiableIds[m33_id] + '.config.json')
         } else {
             let oldId = m22_id;
             m22_id += ~~(Math.random(border));
             if (oldId === m22_id) {
                 m22_id = (m22_id + 1) % border;
             }
-            loadlive2d('live2d', 'https://raw.githubusercontent.com/e9965/poster-girl-l2d-2233/master/src/' + '/22.' + avaiableIds[m22_id] + '.config.json')
+            loadlive2d('live2d', 'https://e9965.github.io/api' + '/22.' + avaiableIds[m22_id] + '.config.json')
         }
         if (border === avaiableIds.length - 1) {
             showMessage('変態！見ないで！')
@@ -239,7 +239,7 @@ const initLive2dData = () => {
     });
     jQuery(document).ready(function () {
         // 初始化
-        loadlive2d('live2d', 'https://raw.githubusercontent.com/e9965/poster-girl-l2d-2233/master/src/' + '/33.2019.summer.config.json');
+        loadlive2d('live2d', 'https://e9965.github.io/api' + '/33.2019.summer.config.json');
     });
     jQuery(document).ready(function ($) {
         $('#search-box').mouseover(function () {

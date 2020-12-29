@@ -1,9 +1,9 @@
 // API 的 URL 前缀
-const live2d_api_prefix = 'https://raw.githubusercontent.com/e9965/poster-girl-l2d-2233/master/src/';
+const live2d_api_prefix = 'https://e9965.github.io/api/';
 // 同时需要引入的 css
-const live2d_waifu_css = ['https://raw.githubusercontent.com/e9965/poster-girl-l2d-2233/master/src/waifu.css'];
+const live2d_waifu_css = ['https://e9965.github.io/api/waifu.css'];
 // 需要引入的 js 文件，无需手动添加 Jquery 因为后面会自动检测并添加
-const live2d_waifu_js = ['https://raw.githubusercontent.com/e9965/poster-girl-l2d-2233/master/src/live2d.min.js', 'https://raw.githubusercontent.com/e9965/poster-girl-l2d-2233/master/src/waifu-tips.js']
+const live2d_waifu_js = ['https://e9965.github.io/api/live2d.min.js', 'https://e9965.github.io/api/waifu-tips.js']
 // live2d 区域的 DOM 代码
 const live2d_dom_html = `<div class="l2d_xb" live-api="${live2d_api_prefix}">
 <div class="waifu">
