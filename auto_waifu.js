@@ -1,9 +1,9 @@
 // API 的 URL 前缀
-const live2d_api_prefix = 'https://ghproxy.com/https://e9965.github.io/api/';
+const live2d_api_prefix = 'https://ghproxy.com/https://raw.githubusercontent.com/e9965/api/master/';
 // 同时需要引入的 css
-const live2d_waifu_css = ['https://ghproxy.com/https://e9965.github.io/api/waifu.css'];
+const live2d_waifu_css = ['https://ghproxy.com/https://raw.githubusercontent.com/e9965/api/master/waifu.css'];
 // 需要引入的 js 文件，无需手动添加 Jquery 因为后面会自动检测并添加
-const live2d_waifu_js = ['https://ghproxy.com/https://e9965.github.io/api/live2d.min.js', 'https://ghproxy.com/https://e9965.github.io/api/waifu-tips.js']
+const live2d_waifu_js = ['https://ghproxy.com/https://raw.githubusercontent.com/e9965/api/master/live2d.min.js', 'https://ghproxy.com/https://raw.githubusercontent.com/e9965/api/master/waifu-tips.js']
 // live2d 区域的 DOM 代码
 const live2d_dom_html = `<div class="l2d_xb" live-api="${live2d_api_prefix}">
 <div class="waifu">
